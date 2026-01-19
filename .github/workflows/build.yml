@@ -94,8 +94,13 @@ jobs:
           docker compose ps
 
       - name: Restart Nginx (Production)
-        if: ${{ secrets.NGINX_NETWORK != '' }}
         run: |
+          # Only restart nginx if NGINX_NETWORK is configured (production mode)
+          if [ -z "${{ secrets.NGINX_NETWORK }}" ]; then
+            echo "Skipping nginx restart (standalone mode)"
+            exit 0
+          fi
+
           # Restart nginx container to reload configuration
           NGINX_CONTAINER="${{ secrets.NGINX_CONTAINER_NAME }}"
           if [ -z "$NGINX_CONTAINER" ]; then
