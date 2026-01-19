@@ -94,7 +94,7 @@ jobs:
           docker compose ps
 
       - name: Restart Nginx (Production)
-        if: secrets.NGINX_NETWORK != ''
+        if: ${{ secrets.NGINX_NETWORK != '' }}
         run: |
           # Restart nginx container to reload configuration
           NGINX_CONTAINER="${{ secrets.NGINX_CONTAINER_NAME }}"
