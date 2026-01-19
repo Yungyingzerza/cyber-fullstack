@@ -46,7 +46,7 @@ docker compose version
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/cyber.git
+git clone https://github.com/Yungyingzerza/cyber-fullstack.git
 cd cyber
 
 # Configure environment

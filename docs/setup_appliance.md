@@ -15,7 +15,7 @@ This guide explains how to deploy the Cyber Log Management System as a standalon
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/cyber.git
+git clone https://github.com/Yungyingzerza/cyber-fullstack.git
 cd cyber
 ```
 
