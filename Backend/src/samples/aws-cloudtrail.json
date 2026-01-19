@@ -1,0 +1,123 @@
+[
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "iam", "account_id": "123456789012", "region": "ap-southeast-1"},
+    "event_type": "CreateUser",
+    "user": "admin",
+    "@timestamp": "2026-01-19T09:10:00Z",
+    "raw": {
+      "eventName": "CreateUser",
+      "requestParameters": {"userName": "temp-user"}
+    }
+  },
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "iam", "account_id": "123456789012", "region": "us-east-1"},
+    "event_type": "DeleteUser",
+    "user": "admin",
+    "@timestamp": "2026-01-19T09:30:00Z",
+    "raw": {
+      "eventName": "DeleteUser",
+      "requestParameters": {"userName": "old-user"}
+    }
+  },
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "ec2", "account_id": "123456789012", "region": "us-west-2"},
+    "event_type": "RunInstances",
+    "user": "devops",
+    "@timestamp": "2026-01-19T10:00:00Z",
+    "raw": {
+      "eventName": "RunInstances",
+      "requestParameters": {"instanceType": "t3.large", "imageId": "ami-12345678"}
+    }
+  },
+  {
+    "tenant": "demoA",
+    "source": "aws",
+    "cloud": {"service": "s3", "account_id": "987654321098", "region": "us-east-1"},
+    "event_type": "CreateBucket",
+    "user": "data-engineer",
+    "@timestamp": "2026-01-19T10:30:00Z",
+    "raw": {
+      "eventName": "CreateBucket",
+      "requestParameters": {"bucketName": "data-lake-2026"}
+    }
+  },
+  {
+    "tenant": "demoA",
+    "source": "aws",
+    "cloud": {"service": "s3", "account_id": "987654321098", "region": "us-east-1"},
+    "event_type": "PutBucketPolicy",
+    "user": "security-admin",
+    "@timestamp": "2026-01-19T11:00:00Z",
+    "raw": {
+      "eventName": "PutBucketPolicy",
+      "requestParameters": {"bucketName": "data-lake-2026"}
+    }
+  },
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "iam", "account_id": "123456789012", "region": "us-east-1"},
+    "event_type": "AttachUserPolicy",
+    "user": "admin",
+    "@timestamp": "2026-01-19T11:30:00Z",
+    "raw": {
+      "eventName": "AttachUserPolicy",
+      "requestParameters": {"userName": "temp-user", "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"}
+    }
+  },
+  {
+    "tenant": "demoA",
+    "source": "aws",
+    "cloud": {"service": "lambda", "account_id": "987654321098", "region": "us-west-2"},
+    "event_type": "CreateFunction",
+    "user": "developer",
+    "@timestamp": "2026-01-19T12:00:00Z",
+    "raw": {
+      "eventName": "CreateFunction20150331",
+      "requestParameters": {"functionName": "data-processor", "runtime": "nodejs18.x"}
+    }
+  },
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "rds", "account_id": "123456789012", "region": "eu-west-1"},
+    "event_type": "CreateDBInstance",
+    "user": "dba",
+    "@timestamp": "2026-01-19T12:30:00Z",
+    "raw": {
+      "eventName": "CreateDBInstance",
+      "requestParameters": {"dBInstanceIdentifier": "prod-db-01", "dBInstanceClass": "db.r5.large"}
+    }
+  },
+  {
+    "tenant": "demoA",
+    "source": "aws",
+    "cloud": {"service": "cloudtrail", "account_id": "987654321098", "region": "us-east-1"},
+    "event_type": "StopLogging",
+    "user": "unknown",
+    "@timestamp": "2026-01-19T13:00:00Z",
+    "raw": {
+      "eventName": "StopLogging",
+      "requestParameters": {"name": "main-trail"}
+    }
+  },
+  {
+    "tenant": "demoB",
+    "source": "aws",
+    "cloud": {"service": "sts", "account_id": "123456789012", "region": "us-east-1"},
+    "event_type": "AssumeRole",
+    "user": "cross-account-user",
+    "src_ip": "203.0.113.50",
+    "@timestamp": "2026-01-19T13:30:00Z",
+    "raw": {
+      "eventName": "AssumeRole",
+      "requestParameters": {"roleArn": "arn:aws:iam::123456789012:role/AdminRole", "roleSessionName": "external-session"}
+    }
+  }
+]

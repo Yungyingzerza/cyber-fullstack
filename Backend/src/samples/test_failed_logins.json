@@ -1,0 +1,80 @@
+[
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "john.doe",
+    "host": "DC01",
+    "message": "Failed login attempt - invalid password",
+    "raw": "EventID=4625 User=john.doe SourceIP=192.168.1.100 Status=0xC000006A",
+    "@timestamp": "2026-01-19T10:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "john.doe",
+    "host": "DC01",
+    "message": "Failed login attempt - invalid password",
+    "raw": "EventID=4625 User=john.doe SourceIP=192.168.1.100 Status=0xC000006A",
+    "@timestamp": "2026-01-19T10:00:30Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "jane.smith",
+    "host": "DC01",
+    "message": "Failed login attempt - account locked",
+    "raw": "EventID=4625 User=jane.smith SourceIP=192.168.1.100 Status=0xC0000234",
+    "@timestamp": "2026-01-19T10:01:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "admin",
+    "host": "DC01",
+    "message": "Failed login attempt - invalid username",
+    "raw": "EventID=4625 User=admin SourceIP=192.168.1.100 Status=0xC0000064",
+    "@timestamp": "2026-01-19T10:01:30Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "administrator",
+    "host": "DC01",
+    "message": "Failed login attempt - invalid password",
+    "raw": "EventID=4625 User=administrator SourceIP=192.168.1.100 Status=0xC000006A",
+    "@timestamp": "2026-01-19T10:02:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_type": "login_failure",
+    "action": "deny",
+    "severity": 5,
+    "src_ip": "192.168.1.100",
+    "user": "root",
+    "host": "DC01",
+    "message": "Failed login attempt - invalid username",
+    "raw": "EventID=4625 User=root SourceIP=192.168.1.100 Status=0xC0000064",
+    "@timestamp": "2026-01-19T10:02:30Z"
+  }
+]

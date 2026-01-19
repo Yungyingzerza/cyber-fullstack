@@ -1,0 +1,92 @@
+[
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "app_login_failed",
+    "user": "alice",
+    "ip": "203.0.113.7",
+    "reason": "wrong_password",
+    "@timestamp": "2026-01-19T07:20:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "app_login_success",
+    "user": "bob",
+    "ip": "192.168.1.50",
+    "@timestamp": "2026-01-19T07:25:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "app_login_failed",
+    "user": "alice",
+    "ip": "203.0.113.7",
+    "reason": "wrong_password",
+    "@timestamp": "2026-01-19T07:21:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "app_login_failed",
+    "user": "alice",
+    "ip": "203.0.113.7",
+    "reason": "wrong_password",
+    "@timestamp": "2026-01-19T07:22:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "api",
+    "event_type": "user_created",
+    "user": "admin",
+    "target_user": "newuser@demo.local",
+    "ip": "10.0.0.5",
+    "@timestamp": "2026-01-19T08:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "api",
+    "event_type": "password_reset",
+    "user": "support",
+    "target_user": "john@demo.local",
+    "ip": "10.0.0.10",
+    "@timestamp": "2026-01-19T08:15:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "file_download",
+    "user": "carol",
+    "ip": "192.168.2.100",
+    "file": "/reports/financial-q3.pdf",
+    "@timestamp": "2026-01-19T09:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "permission_changed",
+    "user": "admin",
+    "target_user": "alice",
+    "old_role": "viewer",
+    "new_role": "editor",
+    "ip": "192.168.1.1",
+    "@timestamp": "2026-01-19T10:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "api",
+    "event_type": "api_key_created",
+    "user": "devops",
+    "key_name": "ci-pipeline-key",
+    "ip": "10.0.1.50",
+    "@timestamp": "2026-01-19T11:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "api",
+    "event_type": "app_logout",
+    "user": "bob",
+    "ip": "192.168.1.50",
+    "@timestamp": "2026-01-19T17:30:00Z"
+  }
+]

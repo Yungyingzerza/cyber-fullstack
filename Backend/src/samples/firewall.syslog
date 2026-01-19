@@ -1,0 +1,10 @@
+<134>Jan 19 12:44:56 fw01 vendor=demo product=ngfw action=deny src=10.0.1.10 dst=8.8.8.8 spt=5353 dpt=53 proto=udp msg=DNS blocked policy=Block-DNS
+<134>Jan 19 12:45:01 fw01 vendor=demo product=ngfw action=allow src=192.168.1.50 dst=93.184.216.34 spt=49152 dpt=443 proto=tcp msg=HTTPS allowed policy=Allow-Web
+<134>Jan 19 12:45:15 fw01 vendor=demo product=ngfw action=deny src=10.0.2.25 dst=185.199.108.153 spt=60001 dpt=22 proto=tcp msg=SSH blocked policy=Block-SSH-External
+<134>Jan 19 12:46:02 fw01 vendor=demo product=ngfw action=allow src=192.168.1.100 dst=142.250.190.46 spt=52341 dpt=80 proto=tcp msg=HTTP allowed policy=Allow-Web
+<134>Jan 19 12:46:30 fw01 vendor=demo product=ngfw action=deny src=203.0.113.50 dst=192.168.1.10 spt=12345 dpt=3389 proto=tcp msg=RDP blocked policy=Block-RDP-Inbound
+<134>Jan 19 12:47:00 fw01 vendor=demo product=ngfw action=alert src=10.0.1.5 dst=104.21.32.1 spt=55555 dpt=4444 proto=tcp msg=Suspicious outbound policy=Alert-C2
+<134>Jan 19 12:48:22 fw02 vendor=demo product=ngfw action=allow src=172.16.0.20 dst=151.101.1.140 spt=61234 dpt=443 proto=tcp msg=HTTPS allowed policy=Allow-Web
+<134>Jan 19 12:49:10 fw02 vendor=demo product=ngfw action=deny src=10.0.3.100 dst=8.8.4.4 spt=5354 dpt=53 proto=udp msg=DNS blocked policy=Block-DNS
+<134>Jan 19 12:50:05 fw01 vendor=demo product=ngfw action=allow src=192.168.2.15 dst=52.85.132.100 spt=49999 dpt=443 proto=tcp msg=AWS API allowed policy=Allow-Cloud
+<134>Jan 19 12:51:30 fw01 vendor=demo product=ngfw action=deny src=198.51.100.77 dst=192.168.1.25 spt=9999 dpt=445 proto=tcp msg=SMB blocked policy=Block-SMB-Inbound

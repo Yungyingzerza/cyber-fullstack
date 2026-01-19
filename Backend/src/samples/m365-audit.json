@@ -1,0 +1,115 @@
+[
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "UserLoggedIn",
+    "user": "bob@demo.local",
+    "ip": "198.51.100.23",
+    "status": "Success",
+    "workload": "Exchange",
+    "@timestamp": "2026-01-19T10:05:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "UserLoginFailed",
+    "user": "eve@demo.local",
+    "ip": "203.0.113.100",
+    "status": "Failure",
+    "failure_reason": "InvalidPassword",
+    "workload": "AzureActiveDirectory",
+    "@timestamp": "2026-01-19T10:10:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "UserLoginFailed",
+    "user": "eve@demo.local",
+    "ip": "203.0.113.100",
+    "status": "Failure",
+    "failure_reason": "InvalidPassword",
+    "workload": "AzureActiveDirectory",
+    "@timestamp": "2026-01-19T10:11:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "UserLoginFailed",
+    "user": "eve@demo.local",
+    "ip": "203.0.113.100",
+    "status": "Failure",
+    "failure_reason": "InvalidPassword",
+    "workload": "AzureActiveDirectory",
+    "@timestamp": "2026-01-19T10:12:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "m365",
+    "event_type": "FileAccessed",
+    "user": "alice@demo.local",
+    "ip": "192.168.1.50",
+    "status": "Success",
+    "workload": "SharePoint",
+    "file_path": "/sites/HR/Shared Documents/Salaries.xlsx",
+    "@timestamp": "2026-01-19T11:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "m365",
+    "event_type": "FileDownloaded",
+    "user": "alice@demo.local",
+    "ip": "192.168.1.50",
+    "status": "Success",
+    "workload": "SharePoint",
+    "file_path": "/sites/HR/Shared Documents/Salaries.xlsx",
+    "@timestamp": "2026-01-19T11:01:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "MailItemsAccessed",
+    "user": "bob@demo.local",
+    "ip": "198.51.100.23",
+    "status": "Success",
+    "workload": "Exchange",
+    "mailbox": "bob@demo.local",
+    "item_count": 25,
+    "@timestamp": "2026-01-19T11:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "m365",
+    "event_type": "GroupMemberAdded",
+    "user": "admin@demo.local",
+    "ip": "10.0.0.5",
+    "status": "Success",
+    "workload": "AzureActiveDirectory",
+    "group_name": "Finance-Admins",
+    "member_added": "carol@demo.local",
+    "@timestamp": "2026-01-19T12:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "m365",
+    "event_type": "MailboxLogin",
+    "user": "hacker@external.com",
+    "ip": "185.220.101.50",
+    "status": "Failure",
+    "failure_reason": "UserNotFound",
+    "workload": "Exchange",
+    "target_mailbox": "ceo@demo.local",
+    "@timestamp": "2026-01-19T12:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "m365",
+    "event_type": "SharingSet",
+    "user": "alice@demo.local",
+    "ip": "192.168.1.50",
+    "status": "Success",
+    "workload": "OneDrive",
+    "file_path": "/personal/alice_demo_local/Documents/Project-Plan.docx",
+    "sharing_type": "AnonymousLink",
+    "@timestamp": "2026-01-19T13:00:00Z"
+  }
+]

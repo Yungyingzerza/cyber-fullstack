@@ -1,0 +1,24 @@
+# Production Docker Compose Override
+# Use with: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+services:
+  frontend:
+    networks:
+      - default
+      - nginx-network
+    # Remove port mapping in production - external nginx will proxy
+    ports: []
+
+  backend:
+    # Optional: Expose backend directly if external nginx needs direct access
+    # Uncomment if your external nginx proxies directly to backend
+    # networks:
+    #   - default
+    #   - nginx-network
+
+networks:
+  # External nginx network for reverse proxy
+  # Use your existing nginx network name
+  nginx-network:
+    external: true
+    name: ${NGINX_NETWORK:-nginxNetwork}

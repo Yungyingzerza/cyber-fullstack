@@ -1,0 +1,119 @@
+[
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "malware_detected",
+    "host": "WIN10-01",
+    "process": "powershell.exe",
+    "severity": 8,
+    "sha256": "abc123def456789012345678901234567890abcdef123456789012345678901234",
+    "action": "quarantine",
+    "@timestamp": "2026-01-19T08:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "suspicious_process",
+    "host": "WIN10-02",
+    "process": "cmd.exe",
+    "parent_process": "excel.exe",
+    "severity": 6,
+    "command_line": "cmd.exe /c whoami",
+    "action": "alert",
+    "@timestamp": "2026-01-19T08:15:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "ransomware_behavior",
+    "host": "WIN10-03",
+    "process": "suspicious.exe",
+    "severity": 10,
+    "sha256": "bad789bad789bad789bad789bad789bad789bad789bad789bad789bad789bad7",
+    "action": "kill_process",
+    "files_affected": 150,
+    "@timestamp": "2026-01-19T09:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "crowdstrike",
+    "event_type": "network_connection",
+    "host": "SERVER-01",
+    "process": "svchost.exe",
+    "dst_ip": "185.220.101.1",
+    "dst_port": 443,
+    "severity": 5,
+    "action": "alert",
+    "reputation": "suspicious",
+    "@timestamp": "2026-01-19T09:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "credential_theft",
+    "host": "WIN10-01",
+    "process": "mimikatz.exe",
+    "severity": 9,
+    "sha256": "mimi123mimi123mimi123mimi123mimi123mimi123mimi123mimi123mimi1234",
+    "action": "kill_process",
+    "@timestamp": "2026-01-19T10:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "crowdstrike",
+    "event_type": "file_written",
+    "host": "SERVER-02",
+    "process": "python.exe",
+    "file_path": "C:\\Users\\Public\\malware.dll",
+    "severity": 7,
+    "action": "quarantine",
+    "@timestamp": "2026-01-19T10:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "dns_request",
+    "host": "WIN10-04",
+    "process": "chrome.exe",
+    "domain": "evil-c2-domain.com",
+    "severity": 8,
+    "action": "block",
+    "category": "command_and_control",
+    "@timestamp": "2026-01-19T11:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "process_injection",
+    "host": "WIN10-05",
+    "process": "notepad.exe",
+    "injected_by": "unknown.exe",
+    "severity": 9,
+    "action": "kill_process",
+    "@timestamp": "2026-01-19T11:30:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "crowdstrike",
+    "event_type": "lateral_movement",
+    "host": "DC01",
+    "process": "psexec.exe",
+    "target_host": "SERVER-03",
+    "user": "admin",
+    "severity": 7,
+    "action": "alert",
+    "@timestamp": "2026-01-19T12:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "crowdstrike",
+    "event_type": "prevention",
+    "host": "WIN10-01",
+    "process": "unknown_dropper.exe",
+    "severity": 8,
+    "sha256": "drop456drop456drop456drop456drop456drop456drop456drop456drop4567",
+    "action": "blocked",
+    "technique": "T1059.001",
+    "@timestamp": "2026-01-19T12:30:00Z"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4625,
+    "event_type": "LogonFailed",
+    "user": "demo\\eve",
+    "host": "DC01",
+    "ip": "203.0.113.77",
+    "logon_type": 3,
+    "@timestamp": "2026-01-19T11:11:11Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4625,
+    "event_type": "LogonFailed",
+    "user": "demo\\eve",
+    "host": "DC01",
+    "ip": "203.0.113.77",
+    "logon_type": 3,
+    "@timestamp": "2026-01-19T11:11:30Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4625,
+    "event_type": "LogonFailed",
+    "user": "demo\\eve",
+    "host": "DC01",
+    "ip": "203.0.113.77",
+    "logon_type": 3,
+    "@timestamp": "2026-01-19T11:12:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4624,
+    "event_type": "LogonSuccess",
+    "user": "demo\\alice",
+    "host": "DC01",
+    "ip": "192.168.1.50",
+    "logon_type": 10,
+    "@timestamp": "2026-01-19T08:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "ad",
+    "event_id": 4624,
+    "event_type": "LogonSuccess",
+    "user": "corp\\bob",
+    "host": "DC02",
+    "ip": "10.0.0.100",
+    "logon_type": 2,
+    "@timestamp": "2026-01-19T08:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4625,
+    "event_type": "LogonFailed",
+    "user": "demo\\admin",
+    "host": "DC01",
+    "ip": "185.220.101.10",
+    "logon_type": 3,
+    "failure_reason": "Unknown user name or bad password",
+    "@timestamp": "2026-01-19T09:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "ad",
+    "event_id": 4720,
+    "event_type": "UserCreated",
+    "user": "corp\\admin",
+    "host": "DC02",
+    "target_user": "corp\\temp-service",
+    "@timestamp": "2026-01-19T09:30:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4728,
+    "event_type": "MemberAddedToGroup",
+    "user": "demo\\admin",
+    "host": "DC01",
+    "target_user": "demo\\alice",
+    "group_name": "Domain Admins",
+    "@timestamp": "2026-01-19T10:00:00Z"
+  },
+  {
+    "tenant": "demoB",
+    "source": "ad",
+    "event_id": 4726,
+    "event_type": "UserDeleted",
+    "user": "corp\\admin",
+    "host": "DC02",
+    "target_user": "corp\\terminated-user",
+    "@timestamp": "2026-01-19T14:00:00Z"
+  },
+  {
+    "tenant": "demoA",
+    "source": "ad",
+    "event_id": 4648,
+    "event_type": "ExplicitCredentialLogon",
+    "user": "demo\\service-account",
+    "host": "APP-SERVER-01",
+    "ip": "192.168.2.50",
+    "target_server": "DB-SERVER-01",
+    "logon_type": 3,
+    "@timestamp": "2026-01-19T15:00:00Z"
+  }
+]
